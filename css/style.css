@@ -177,7 +177,6 @@ body {
   margin-bottom: 2px;
   background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -194,11 +193,11 @@ body {
 }
 
 .tabs__btn-item {
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .tabs__btn-item--active {
+  font-weight: 700;
   color: #070707;
 }
 
@@ -213,6 +212,8 @@ body {
   grid-template-rows: auto 150px;
   gap: 40px;
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.6s;
   position: absolute;
 }
 
