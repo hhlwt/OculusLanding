@@ -224,6 +224,7 @@ body {
 .tabs__content-img {
   grid-row: 1/-1;
   align-self: stretch;
+  object-fit: cover;
 }
 
 .tabs__content-box h3 {
@@ -582,4 +583,112 @@ body {
   display: flex;
   justify-self: end;
   gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .tabs {
+    display: block;
+  }
+
+  .tabs__btn {
+    display: block;
+    column-count: 2;
+  }
+
+  .tabs__btn-item {
+    display: block;
+  }
+
+  .game__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 770px) {
+  .top {
+    background-position: center;
+    min-height: calc(70vh - 81px);
+  }
+
+  .title {
+    font-size: 66px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .top__text {
+    margin-bottom: 25px;
+  }
+
+  .buy-btn__text {
+    padding: 15px 70px;
+  }
+
+  .buy-btn__price {
+    padding: 15px 70px;
+  }
+
+  .buy__text {
+    font-size: 12px;
+  }
+
+  .features__titles {
+    display: block;
+  }
+
+  .features__text {
+    margin-bottom: 20px;
+  }
+
+  .tabs__content-item {
+    display: block;
+  }
+
+  .video {
+    margin-top: 20px;
+  }
+
+  .game {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 545px) {
+  .game__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 435px) {
+  .top {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .buy-btn {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .tabs__btn {
+    column-count: 1;
+  }
+
+  .features__text {
+    font-size: 30px;
+  }
+
+  .game {
+    margin-top: 100px;
+  }
 }
